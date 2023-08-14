@@ -37,3 +37,23 @@ VALUES
  '81234000000','Ponomar','pirat21',
  '2023-06-01'
 );
+
+--Простой пример создания и заполнения таблиц
+DROP table dostup;
+Create table dostup
+(
+	dostup_id INT PRIMARY KEY NOT NULL,
+	name_dostup VARCHAR(50) NOT NULL,
+	dostup_num INT NOT NULL
+);
+
+INSERT INTO dostup
+VALUES
+(
+	1, 'Administrator',1
+);
+INSERT INTO dostup
+VALUES
+(
+	2, 'User',2
+);
