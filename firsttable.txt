@@ -1,1 +1,39 @@
-print
+DROP TABLE accounts;
+
+CREATE TABLE accounts
+(
+	account_id INT PRIMARY KEY,
+	first_name VARCHAR(60) NOT NULL, 
+	last_name VARCHAR (60) NOT NULL,
+	bith_date DATE NOT NULL,
+	email VARCHAR(150),
+	phone_number VARCHAR(11),
+	login_p VARCHAR(150) NOT NULL,
+	pass VARCHAR(200) NOT NULL,
+	reg_date DATE NOT NULL
+	
+);
+
+INSERT INTO accounts
+VALUES
+(1, 'Иван','Сидоров',
+ '1979-05-15','Sid@mail.ru',
+ '81234567890','SidorIv','SI1234',
+ '2023-08-14'
+);
+
+INSERT INTO accounts
+VALUES
+(2,'Мария','Высоких',
+ '1998-12-07','Marivas@mail.ru',
+ '81255567890','Mary','hill2020',
+ '2023-04-12'
+);
+
+INSERT INTO accounts
+VALUES
+(3,'Евгений','Пономарев',
+ '1983-10-15','Pon@mail.ru',
+ '81234000000','Ponomar','pirat21',
+ '2023-06-01'
+);
